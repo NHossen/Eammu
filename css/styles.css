@@ -144,7 +144,7 @@ hr{
   margin-top: 20px;
   margin-bottom: 40px;
   font-size: 55px;
-  color: rgb(78, 78, 78);;
+  color: rgb(78, 78, 78);
 }
 .company-name{
   margin-top: 100px;
@@ -154,5 +154,60 @@ hr{
   cursor: pointer;
   font-size: 30px;
   color:rgb(1, 34, 8) ;
+}
+
+/* footer section */
+.footer-item{
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright-section{
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.copyright-section h1{
+  color: rgb(1, 34, 8);
+}
+
+/* eammu footer links section */
+.important-links h1{
+  font-size: 30px;
+  font-weight: 550;
+
+}
+
+.links-item{
+  margin-top:20px ;
+}
+.links-item li{
+  margin-top: 10px;
+  list-style: none;
+}
+.links-item li a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight:600;
+  color:rgb(78, 78, 78) ;
+}
+.links-item li a:hover{
+  color:rgb(1, 34, 8) ;
+}
+
+.copyright-section p {
+  font-size: 20px;
+  color:rgb(78, 78, 78) ;
+
+}
+.copyright-section a{
+  text-decoration: none;
+  font-weight: 600;
+  color:rgb(1, 34, 8) ;
+
+}
+.copyright-section a:hover{
+  color:rgb(78, 78, 78)  ;
 }
  
