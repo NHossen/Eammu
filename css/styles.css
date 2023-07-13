@@ -12,6 +12,7 @@ body{
   padding: 20px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   box-shadow: 4px 4px 15px rgb(191, 191, 191);
@@ -102,12 +103,13 @@ body{
 
 .leader-container{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items:center;
   margin: 30px;
   padding-bottom: 20px;
   box-shadow: 5px 5px 15px rgb(199, 199, 199);
-  width: 1600px;
+  /* width: 1600px; */
   margin: 0 auto;
   border-radius: 5px;
 
@@ -138,6 +140,7 @@ hr{
   margin-bottom: 100px;
   margin-top: 100px;
   text-align: center;
+  align-items: center;
   padding: 200px;
   
   box-shadow: 5px 5px 15px rgb(199, 199, 199);
