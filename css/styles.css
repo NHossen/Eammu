@@ -93,7 +93,7 @@ body{
 
 .our-team{
   margin-top: 120px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding: 10px;
   text-align: center;
   font-size: 2rem;
@@ -262,6 +262,23 @@ hr{
     font-size:15px;
     
   }
+  /* Our leader */
 
+  .our-team{
+    margin-top: 50px;
+    font-size: 1.5rem;
+  }
+  .leader-container{
+    flex-direction: column;
+  }
+
+  .leader{
+    height: 180px;
+    width: 200px;
+    padding: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+    
+  }
   
 }
