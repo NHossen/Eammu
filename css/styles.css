@@ -218,3 +218,28 @@ hr{
   color:rgb(78, 78, 78)  ;
 }
  
+/* Responsive  */
+
+@media screen and (max-width:576px) {
+  .menu-container{
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menus li a{
+    font-size:12px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+  }
+
+  .eammu-logo{
+    width: 150px;
+  }
+
+  .menus li{
+    margin:8px;
+    padding-right:0px;
+  }
+
+  
+}
