@@ -84,9 +84,10 @@ body{
   text-decoration: none;
   color: rgb(232, 232, 232);
 }
-.motto-description{
+.motto-description strong{
   font-size:20px;
-  color:rgb(1, 34, 8) ;
+  color: rgb(1, 34, 8);
+  
 }
 
 /* Our leadership team */
@@ -99,6 +100,10 @@ body{
   font-size: 2rem;
   font-weight: bold;
   color:rgb(78, 78, 78); ;
+}
+
+.our-leader{
+  margin-bottom: 50px;
 }
 
 .leader-container{
@@ -134,32 +139,38 @@ hr{
 }
 /* about us */
 .about-us{
-  width: 1200px;
-  height: 300px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 200px;
+  /* flex-wrap: wrap; */
+  height: 300px;
+  width: 100%;
+  padding-top: 100px;
   
+  padding-left: 20px;
   box-shadow: 5px 5px 15px rgb(199, 199, 199);
   border-radius: 5px;
+  margin-bottom: 50px;
 
 }
 .company-about{
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-size: 55px;
+  margin-bottom: 15px;
+  font-size: 40px;
   color: rgb(78, 78, 78);
 }
+.company-description{
+ width: 80%;
+ font-size: 15px;
+ text-align: center;
+}
 .company-name{
-  margin-top: 100px;
+  margin-top: 40px;
+  
 }
 .company-name a{
   text-decoration: none;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 24px;
   color:rgb(1, 34, 8) ;
 }
 
@@ -181,8 +192,8 @@ hr{
 
 /* eammu footer links section */
 .important-links h1{
-  font-size: 30px;
-  font-weight: 550;
+  font-size: 25px;
+  font-weight: 850;
 
 }
 
@@ -195,8 +206,8 @@ hr{
 }
 .links-item li a{
   text-decoration: none;
-  font-size: 20px;
-  font-weight:600;
+  font-size: 15px;
+  font-weight:500;
   color:rgb(78, 78, 78) ;
 }
 .links-item li a:hover{
@@ -247,7 +258,7 @@ hr{
     padding-top: 15%;
     padding-left: 10%;
     align-items: center;
-    width: 90%;
+    /* width: 50%; */
   }
   
   .brand-name{
@@ -262,11 +273,28 @@ hr{
     font-size:15px;
     
   }
+  /* Company about */
+  
+
+  .company-about{
+    font-size: 30px;
+    
+  }
+
+  .company-description{
+    font-size: 12px;
+   }
+
+  .company-name a{
+    font-size: 16px;
+  }
+
   /* Our leader */
 
   .our-team{
     margin-top: 50px;
     font-size: 1.5rem;
+    margin-bottom: 20px;
   }
   .leader-container{
     flex-direction: column;
@@ -275,10 +303,37 @@ hr{
   .leader{
     height: 180px;
     width: 200px;
-    padding: 50px;
-    margin-top: 15px;
-    border-radius: 5px;
-    
+
   }
+    /* footer section */
+
+    .footer-item{
+      margin: 20px;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .copyright-section{
+      margin: 20px;
+      flex-direction: column;
+
+    }
+    .copyright-section h1{
+     font-size: 20px;
+    }
+    .copyright-section p{
+      font-size: 14px;
+      margin-bottom: 10px;
+      
+    }
+
+    .important-links h1{
+      font-size: 18px;
+      font-weight: 800;
+    
+    }
+
+    .links-item li a{
+      font-size: 12px;
   
+    }
 }
