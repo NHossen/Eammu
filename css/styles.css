@@ -48,8 +48,8 @@ body{
 .motto-container{
   /* text-align:  center; */
   padding-top: 15%;
-  padding-left: 30%;
-  width: 50%;
+  padding-left: 2.5%;
+  width: 100%;
   align-items: center;
 }
 .brand-name{
@@ -239,6 +239,28 @@ hr{
   .menus li{
     margin:8px;
     padding-right:0px;
+  }
+
+
+  .motto-container{
+    /* text-align:  center; */
+    padding-top: 15%;
+    padding-left: 10%;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .brand-name{
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .brand-motto{
+    font-size: 24px;
+    margin-bottom:10px ;
+  }
+  .motto-description{
+    font-size:15px;
+    
   }
 
   
