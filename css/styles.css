@@ -252,15 +252,15 @@ hr{
   align-items: center;
 }
 .brand-name{
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 .brand-motto{
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom:10px ;
 }
 .motto-description{
-  font-size:15px;
+  font-size:14px;
 }
 
 
@@ -310,10 +310,10 @@ hr{
 
     }
     .copyright-section h1{
-     font-size: 20px;
+     font-size: 16px;
     }
     .copyright-section p{
-      font-size: 14px;
+      font-size: 12px;
       margin-bottom: 10px;
       
     }
