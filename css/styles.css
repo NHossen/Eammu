@@ -131,9 +131,9 @@ body{
 
 
 /* hr margin */
-hr{
-  /* margin-top: 20px; */
-}
+/* hr{
+  margin-top: 20px;
+} */
 /* about us */
 
 .about-us{
@@ -210,10 +210,14 @@ hr{
 }
 
 .copyright-section p {
-  font-size: 20px;
+  font-size: 14px;
   color:rgb(78, 78, 78) ;
 
 }
+.copyright-section h1{
+  font-size: 22px;
+}
+
 .copyright-section a{
   text-decoration: none;
   font-weight: 600;

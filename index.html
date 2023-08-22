@@ -4,138 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eammu</title>
-<!-- google fonts  -->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="shortcut icon" href="images/Eammu icon.jpg" type="image/x-icon">
+    <!-- Tailwind CSS and DaisyUI stylesheets -->
+    <!-- DaisyUI and Tailwids cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Your custom CSS file -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="menu-container">
-                <div class="brand-logo">
-                    <a href="index.html"><img class="eammu-logo" src="images/Eammu.png" alt=""></a>
-                </div>
-
-                <div class="menus">
-                    <ul>
-                        <li><a class="item" href="about.html">About</a></li>
-                        <li><a class="item" href="">Our Services</a></li>
-                        <li><a class="item" href="">Newsroom</a></li>
-                        <li><a class="item" href="">Contact us</a></li>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-
-    </header>
+<body class="">
+   <!-- Header Section -->
+   <header class="bg-white py-4">
+    <nav class="container mx-auto flex justify-between items-center">
+        <div class="brand-logo">
+            <a href="index.html"><img class="eammu-logo" src="images/Eammu.png" alt=""></a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="block md:hidden">
+            <button class="navbar-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex menus">
+            <ul class="flex space-x-4">
+                <li><a class="item" href="about.html">About</a></li>
+                <li><a class="item" href="">Our Services</a></li>
+                <li><a class="item" href="">Newsroom</a></li>
+                <li><a class="item" href="">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="hidden md:hidden py-2" id="mobileMenu">
+        <ul class="text-center">
+            <li><a class="block py-2" href="about.html">About</a></li>
+            <li><a class="block py-2" href="">Our Services</a></li>
+            <li><a class="block py-2" href="">Newsroom</a></li>
+            <li><a class="block py-2" href="">Contact us</a></li>
+        </ul>
+    </div>
+</header>
+<!-- ... Rest of the content ... -->
+    
     <!-- Main Section -->
     <main>
         <!-- Our Motto -->
-        <section>
-            <div class="motto-container">
-                <h1 class="brand-name">Eammu</h1>
-                <p class="brand-motto"><strong>Something New..!</strong></p>
-                <p class="motto-description">Since 2022,we have envolved <strong>Digital Business Developement </strong>program. <br> Through creativity and innovation, we are comitted to providing best services to our valuable customer - around the world.</p>
+        <section class=" py-20">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl font-semibold mb-4">Eammu</h1>
+                <p class="text-xl mb-6"><strong>Something New..!</strong></p>
+                <p class="text-lg leading-relaxed mb-6">Since its inception in 2022, Eammu Group has emerged as a trailblazing force, redefining the landscape of various industries through its innovative digital solutions. Rooted in a commitment to excellence, Eammu Group encompasses a range of services, each characterized by cutting-edge technology, unmatched quality, and a customer-centric approach.</p>
                 <button class="btn btn-motto"><a href="">Explore more</a></button>
             </div>
-
         </section>
-        <!--Our leadership team  -->
-        <section class="our-leader">
-            <h1 class="our-team">Our leadership team</h1>
-            <div class="leader-container">
-                <div class="leader">
-                    <h1>Naeem Hossen</h1>
-                    <p><strong>Group Chief Executive Officer</strong></p>
-                    
+        <!-- Our leadership team  -->
+        <section class="bg-gray-100 py-16 hidden">
+            <div class="container mx-auto">
+                <h1 class="text-3xl text-center mb-10">Our leadership team</h1>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                    <div class="leader text-center">
+                        <h1 class="text-xl font-semibold">Naeem Hossen</h1>
+                        <p><strong>Group Chief Executive Officer</strong></p>
+                    </div>
+                    <div class="leader text-center">
+                        <h1 class="text-xl font-semibold">Nur Islam</h1>
+                        <p><strong>Group Chief Executive Officer</strong></p>
+                    </div>
+                    <div class="leader text-center">
+                        <h1 class="text-xl font-semibold">Sana Ullah</h1>
+                        <p><strong>Group Chief Executive Officer</strong></p>
+                    </div>
                 </div>
-                <div class="leader">
-                    <h1>Nur islam</h1>
-                    <p><strong>Group Chief Executive Officer</strong></p>
-
-                </div>
-                <div class="leader">
-                    <h1>Sana Ullah</h1>
-                    <p><strong>Group Chief Executive Officer</strong></p>
-
-                </div>
-
             </div>
-
         </section>
         <!-- About us -->
-        <section class="about-section">
-            <div class="about-us">
-                <h1 class="company-about">About us.</h1>
-                <p class="company-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore ea architecto, quae et aliquid aut. Dolores obcaecati placeat dolorum sed excepturi eius eum quisquam at dolorem illum dolore architecto voluptas quas, exercitationem, ducimus sdfad adfadsadsf adfadsfadsfadfa adfadff. </p>
-                <h2 class="company-name"><a href="#">Eammu Careers</a></h2>
-
+        <section class="py-16">
+            <div class="container mx-auto text-center">
+                <h1 class="text-3xl mb-6">Our Vision.</h1>
+                <p class="text-lg mb-6">At Eammu Group, we envisage a world where digital solutions transcend boundaries, creating meaningful impact across industries. Our vision is to be recognized as a pioneering force that sets new benchmarks for excellence, innovation, and customer service. With every service we provide, every challenge we overcome, and every partnership we forge, we move closer to making this vision a reality.
+                Join us in embracing the digital revolution, as we propel industries forward, elevate experiences, and shape a brighter future through the power of Eammu Group.</p>
+                <h2 class="text-xl"><a href="#">Eammu Careers</a></h2>
+            </div>
+        </section>
+    </main>
+    <hr class="my-16">
+    <!-- Footer Section -->
+    <footer class="py-10">
+        <div class="container mx-auto flex justify-between">
+            <div class="footer-item">
+                <div class="important-links">
+                    <h1 class="text-lg font-semibold mb-4">Eammu Group Websites</h1>
+                    <ul class="links-item">
+                        <li><a href="">Eammu</a></li>
+                        <li><a href="">Eammu Tour's & Travel</a></li>
+                        <li><a href="">Eammu Fashion</a></li>
+                        <li><a href="">Eammu IT & Marketing Solutions</a></li>
+                        <li><a href="">Eammu Event Management</a></li>
+                        <li><a href="">Eammu Dairy &Poultry Farm</a></li>
+                        <li><a href="">Eammu Textile Industry</a></li>
+                        <li><a href="">Eammu Dairy &Poultry Farm</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-item">
+                <div class="important-links">
+                    <h1>Eammu useful links</h1>
+                    <ul class="links-item">
+                        <li><a href="">Eammu newsfeeds</a></li>
+                        <li><a href="">Eammu recent projects</a></li>
+                        <li><a href="">Our leading team</a></li>
+                        <li><a href="">careers</a></li>
+                        <li><a href="">Why choice us</a></li>
+                        <li><a href="">Our services</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-item">
+                <div class="important-links">
+                    <h1>Eammu social media</h1>
+                    <ul class="links-item">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Linkdln</a></li>
+                        <li><a href="">Instagram</a></li>
+                    </ul>
+                </div>
             </div>
             
-
-        </section>
-
-    </main>
-    <hr>
-    <!-- Footer Section -->
-    <footer>
-    <div class="footer-item">
-        <div class="important-links">
-            <h1>Eammu Group Websites</h1>
-            <ul class="links-item">
-                <li><a href="">Eammu</a></li>
-                <li><a href="">Eammu Tour's & Travel</a></li>
-                <li><a href="">Eammu Fashion</a></li>
-                <li><a href="">Eammu IT & Marketing Solutions</a></li>
-                <li><a href="">Eammu Event Management</a></li>
-                <li><a href="">Eammu Dairy &Poultry Farm</a></li>
-                <li><a href="">Eammu Textile Industry</a></li>
-                <li><a href="">Eammu Dairy &Poultry Farm</a></li>
-                
-            </ul>
-
         </div>
-        <div class="important-links">
-            <h1>Eammu useful links</h1>
-            <ul class="links-item">
-                <li><a href="">Eammu newsfeeds</a></li>
-                <li><a href="">Eammu recent projects</a></li>
-                <li><a href="">Our leading team</a></li>
-                <li><a href="">careers</a></li>
-                <li><a href="">Why choice us</a></li>
-                <li><a href="">Our services</a></li>
-
-                
-            </ul>
-
-        </div>
-        <div class="important-links">
-            <h1>Eammu social media</h1>
-            <ul class="links-item">
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Linkdln</a></li>
-                <li><a href="">Instagram</a></li>
-                
-            </ul>
-
-        </div>
-
-    </div>
-    <hr>
-
-    <div class="copyright-section">
-        <p>Copyright 2023 <a href="#">Eammu</a> ,All rights reserved.</p>
-        <h1>Something New..!</h1>
-
-    </div>
+            <div class="copyright-section">
+                <p>Copyright 2023 <a href="#">Eammu</a>, All rights reserved.</p>
+                <h1>Something New..!</h1>
+            </div>
     </footer>
+    
+    <script>
+        const mobileMenuButton = document.querySelector('.navbar-toggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+    
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    
 </body>
 </html>
